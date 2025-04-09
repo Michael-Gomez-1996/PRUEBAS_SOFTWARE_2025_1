@@ -1,0 +1,143 @@
+{
+  "id": "4fd1ea22-328e-48ad-bff6-5b0d88b62ed6",
+  "version": "2.0",
+  "name": "Ejercicio1_Formulario",
+  "url": "https://www.w3schools.com",
+  "tests": [{
+    "id": "00f29d61-f13a-4e04-af4c-00239acb8355",
+    "name": "Ejercicio1_Formulario.side",
+    "commands": [{
+      "id": "b0d6340a-1829-47b5-ba9c-25207bd511c3",
+      "comment": "",
+      "command": "open",
+      "target": "/html/html_forms.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af630a7b-09fa-4756-86d4-ff41c34f61ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3cb5ce3-89c4-4c6a-a783-d585b2c36af4",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "1357,304"
+    }, {
+      "id": "d4898196-ade9-4aad-8cdf-a1acf70997cf",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "1357,304"
+    }, {
+      "id": "060f5a4c-1ffa-4c80-9d81-7aad1b24e5e0",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "1357,304"
+    }, {
+      "id": "dfd15ab5-486e-4ccf-97d0-91151f2a1c98",
+      "comment": "",
+      "command": "click",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=fname", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e1d3c28-aab3-428e-8230-1124d8e19feb",
+      "comment": "",
+      "command": "type",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=fname", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Andres"
+    }, {
+      "id": "0db59485-1220-4bf1-947f-dd3a63b1a21d",
+      "comment": "",
+      "command": "click",
+      "target": "id=lname",
+      "targets": [
+        ["id=lname", "id"],
+        ["name=lname", "name"],
+        ["css=#lname", "css:finder"],
+        ["xpath=//input[@id='lname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "636b8323-4ed0-44f7-a406-426ea44facfa",
+      "comment": "",
+      "command": "type",
+      "target": "id=lname",
+      "targets": [
+        ["id=lname", "id"],
+        ["name=lname", "name"],
+        ["css=#lname", "css:finder"],
+        ["xpath=//input[@id='lname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Quintero"
+    }, {
+      "id": "e0afa4cc-3901-42f2-86c2-8a1f27a86d86",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3924",
+      "windowTimeout": 2000
+    }, {
+      "id": "359a599c-5a24-4d81-a068-c6ad913323a8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3924}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c1da8740-2ad1-44b1-8417-91c2366588a3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["00f29d61-f13a-4e04-af4c-00239acb8355"]
+  }],
+  "urls": ["https://www.w3schools.com/"],
+  "plugins": []
+}

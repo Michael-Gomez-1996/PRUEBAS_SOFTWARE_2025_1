@@ -1,0 +1,75 @@
+{
+  "id": "ef92823c-6bfc-4cb4-bd03-94b76ed46705",
+  "version": "2.0",
+  "name": "NavegacionSelenium",
+  "url": "",
+  "tests": [{
+    "id": "c1bc8605-dc56-4f70-ac5d-c412720c01ec",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "6b8aa5b9-09d5-40e7-9f0a-df3f528c3380",
+    "name": "Navegar",
+    "commands": [{
+      "id": "c516457e-0291-4f46-9c73-37cf1f410b3e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.selenium.dev/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e63fe85-54f3-45b5-b2d2-3606284543c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(2) span",
+      "targets": [
+        ["css=.nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Downloads')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1eeb1fa9-d94d-4b4f-978b-1f2eb9f6b502",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "latest releases",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "989385fc-7342-4a55-be04-254574f88689",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) span",
+      "targets": [
+        ["css=.nav-item:nth-child(4) span", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26a215b5-4ee4-48fb-bbf3-99c64fd14969",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=.nav-item:nth-child(4) span", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Projects')]", "xpath:innerText"]
+      ],
+      "value": "Selenium has many projects"
+    }]
+  }],
+  "suites": [{
+    "id": "95431cd7-9c95-48ff-bbfd-3ce87b823b64",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c1bc8605-dc56-4f70-ac5d-c412720c01ec"]
+  }],
+  "urls": [],
+  "plugins": []
+}
